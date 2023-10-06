@@ -98,9 +98,9 @@
 
 ## 假设你找到了使用相同密钥的明、密文对(一个或多个)，请尝试使用暴力破解的方法找到正确的密钥Key
 
-已找到明文：
+已找到明文：11111101
 
-已找到密文：
+已找到密文：00011100
 
 ![image](https://github.com/bigxantares/S-DES/assets/116985680/d69b713d-4374-4d32-9c89-4900fc8accbe)
 
@@ -109,6 +109,7 @@
 ## 暴力破解
 
 实现单线程暴力破解
+
 brute_force_1key函数使用itertools.product函数生成所有可能的10位二进制密钥，然后逐个尝试加密明文，直到找到与给定密文匹配的密钥。函数返回找到的密钥，或者在未找到有效密钥时返回None
 
 ![image](https://github.com/bigxantares/S-DES/assets/116985680/81229119-03f4-4d9a-8c3a-f9c2b32ce025)
